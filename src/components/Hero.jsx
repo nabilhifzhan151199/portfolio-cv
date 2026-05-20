@@ -82,36 +82,7 @@ export default function Hero() {
           Singapore & Indonesia.
         </p>
 
-        <div className="flex flex-wrap gap-4 justify-center mb-12">
-          <a
-            href="#projects"
-            className="px-8 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold transition-all duration-200 shadow-[0_0_20px_rgba(99,102,241,0.3)] hover:shadow-[0_0_30px_rgba(99,102,241,0.5)]"
-          >
-            View Portfolio
-          </a>
-          <a
-            href="/cv Muhammad Nabil Hifzhan - Engineer.pdf"
-            download
-            className="px-8 py-3 rounded-xl border border-indigo-500/40 text-gray-200 hover:border-indigo-400 hover:text-white font-semibold transition-all duration-200"
-          >
-            Download CV
-          </a>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-8 sm:gap-16 text-center">
-          {[
-            { value: '5+', label: 'Years Experience' },
-            { value: '4', label: 'Companies' },
-            { value: '120hrs', label: 'Saved / Month' },
-          ].map(({ value, label }) => (
-            <div key={label}>
-              <div className="text-3xl font-bold gradient-text">{value}</div>
-              <div className="text-sm text-gray-500 mt-1">{label}</div>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-16 flex flex-col items-center gap-2 text-gray-600">
+        <div className="mt-4 flex flex-col items-center gap-2 text-gray-600">
           <span className="text-xs tracking-widest uppercase">scroll</span>
           <div className="w-px h-8 bg-gradient-to-b from-indigo-500/50 to-transparent animate-pulse" />
         </div>
