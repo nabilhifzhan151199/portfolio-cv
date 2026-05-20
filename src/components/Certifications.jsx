@@ -3,40 +3,41 @@ import { SectionTitle } from './About'
 
 const certs = [
   {
-    name: '[Your Certification Name]',
-    issuer: 'Amazon Web Services (AWS)',
-    date: '2024',
-    icon: '☁️',
-    badge: 'AWS',
-    color: 'from-orange-600/20 to-yellow-600/10 border-orange-500/30',
-    badgeColor: 'text-orange-400',
-  },
-  {
-    name: '[Your Certification Name]',
-    issuer: 'Databricks',
-    date: '2023',
-    icon: '⚡',
-    badge: 'Databricks',
-    color: 'from-red-600/20 to-rose-600/10 border-red-500/30',
-    badgeColor: 'text-red-400',
-  },
-  {
-    name: '[Your Certification Name]',
-    issuer: 'Google Cloud',
-    date: '2023',
-    icon: '🌐',
-    badge: 'GCP',
+    name: 'Microsoft Certified: Azure Fundamentals',
+    code: 'AZ-900',
+    issuer: 'Microsoft',
+    date: '',
+    icon: '🔷',
+    badge: 'Microsoft Azure',
     color: 'from-blue-600/20 to-cyan-600/10 border-blue-500/30',
     badgeColor: 'text-blue-400',
   },
+]
+
+const achievements = [
   {
-    name: '[Your Certification Name]',
-    issuer: 'Microsoft',
-    date: '2022',
-    icon: '📊',
-    badge: 'Microsoft',
-    color: 'from-indigo-600/20 to-violet-600/10 border-indigo-500/30',
-    badgeColor: 'text-indigo-400',
+    title: 'Uniops SEA&I Director Award 2023',
+    description: 'Successfully implemented Board Performance Radar — Dec 2023',
+    icon: '🏆',
+    color: 'from-amber-600/20 to-yellow-600/10 border-amber-500/30',
+    badgeColor: 'text-amber-400',
+    badge: 'Unilever SEA&I',
+  },
+  {
+    title: '2nd Runner Up — Most Outstanding Student',
+    description: 'Faculty of Engineering, Universitas Indonesia — June 2020',
+    icon: '🥉',
+    color: 'from-emerald-600/20 to-teal-600/10 border-emerald-500/30',
+    badgeColor: 'text-emerald-400',
+    badge: 'Universitas Indonesia',
+  },
+  {
+    title: 'Kyoto University Winter School',
+    description: 'Energy Science Programme — Jan 2021 · Feb 2021',
+    icon: '🎌',
+    color: 'from-rose-600/20 to-red-600/10 border-rose-500/30',
+    badgeColor: 'text-rose-400',
+    badge: 'Kyoto University',
   },
 ]
 
@@ -46,23 +47,40 @@ export default function Certifications() {
   return (
     <section id="certifications" className="py-24 px-6">
       <div ref={ref} className="section-hidden max-w-6xl mx-auto">
-        <SectionTitle label="Certifications" />
-        <p className="mt-3 text-gray-500 text-sm">
-          * Replace placeholders with your actual certification names.
-        </p>
+        <SectionTitle label="Certifications & Achievements" />
 
-        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {/* Certifications */}
+        <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-widest mt-12 mb-6">Certifications</h3>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {certs.map((c) => (
             <div
               key={c.name}
-              className={`rounded-xl bg-gradient-to-br ${c.color} border p-5 card-hover flex flex-col items-center text-center`}
+              className={`rounded-xl bg-gradient-to-br ${c.color} border p-6 card-hover flex items-start gap-4`}
             >
-              <div className="text-4xl mb-3">{c.icon}</div>
-              <span className={`text-xs font-bold uppercase tracking-widest mb-2 ${c.badgeColor}`}>
-                {c.badge}
-              </span>
-              <h3 className="text-sm font-semibold text-white mb-1 leading-snug">{c.name}</h3>
-              <div className="text-xs text-gray-500 mt-auto pt-3">{c.issuer} · {c.date}</div>
+              <span className="text-4xl shrink-0">{c.icon}</span>
+              <div>
+                <span className={`text-xs font-bold uppercase tracking-widest ${c.badgeColor}`}>{c.badge}</span>
+                <div className="text-sm font-semibold text-white mt-1 leading-snug">{c.name}</div>
+                <div className="text-xs text-gray-500 mt-1 font-mono">{c.code}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Achievements */}
+        <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-widest mt-12 mb-6">Achievements & Awards</h3>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {achievements.map((a) => (
+            <div
+              key={a.title}
+              className={`rounded-xl bg-gradient-to-br ${a.color} border p-6 card-hover flex items-start gap-4`}
+            >
+              <span className="text-4xl shrink-0">{a.icon}</span>
+              <div>
+                <span className={`text-xs font-bold uppercase tracking-widest ${a.badgeColor}`}>{a.badge}</span>
+                <div className="text-sm font-semibold text-white mt-1 leading-snug">{a.title}</div>
+                <div className="text-xs text-gray-400 mt-1">{a.description}</div>
+              </div>
             </div>
           ))}
         </div>

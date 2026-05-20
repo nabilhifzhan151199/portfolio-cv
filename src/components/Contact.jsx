@@ -10,8 +10,8 @@ export default function Contact() {
         <SectionTitle label="Get In Touch" />
 
         <p className="mt-6 text-gray-400 leading-relaxed">
-          I&apos;m currently open to new opportunities — whether that&apos;s a full-time role,
-          freelance data project, or just a chat about data. My inbox is always open.
+          I&apos;m open to new opportunities — full-time roles, freelance data projects, or just a
+          conversation about data engineering and analytics. My inbox is always open.
         </p>
 
         <a
@@ -22,9 +22,9 @@ export default function Contact() {
           Say Hello
         </a>
 
-        <div className="mt-14 flex justify-center gap-6 flex-wrap">
+        <div className="mt-14 flex justify-center gap-4 flex-wrap">
           <SocialLink
-            href="https://www.linkedin.com/in/nabil-hifzhan/"
+            href="https://www.linkedin.com/in/nabil-hifzhan"
             label="LinkedIn"
             icon={
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -34,10 +34,19 @@ export default function Contact() {
           />
           <SocialLink
             href="mailto:nabil.hifzhan@gmail.com"
-            label="Email"
+            label="nabil.hifzhan@gmail.com"
             icon={
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            }
+          />
+          <SocialLink
+            href="tel:+6586508946"
+            label="+65 8650 8946"
+            icon={
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
             }
           />
@@ -51,7 +60,7 @@ function SocialLink({ href, label, icon }) {
   return (
     <a
       href={href}
-      target="_blank"
+      target={href.startsWith('http') ? '_blank' : undefined}
       rel="noreferrer"
       className="flex items-center gap-2 px-5 py-2.5 rounded-lg border border-white/10 text-gray-400 hover:text-white hover:border-indigo-500/50 transition-all duration-200 text-sm font-medium"
     >

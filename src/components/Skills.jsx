@@ -3,49 +3,44 @@ import { SectionTitle } from './About'
 
 const skillGroups = [
   {
-    category: 'Programming Languages',
-    icon: '💻',
-    skills: ['Python', 'SQL', 'R', 'VBA'],
+    category: 'Data Engineering & Analytics',
+    icon: '⚙️',
+    skills: ['SQL', 'Python', 'Apache Airflow', 'dbt', 'Apache Spark', 'Hadoop', 'Hive', 'API Integration', 'Google Apps Script'],
   },
   {
-    category: 'Big Data & Streaming',
-    icon: '⚡',
-    skills: ['Apache Spark', 'Apache Kafka', 'Hadoop', 'Hive', 'Databricks'],
-  },
-  {
-    category: 'Data Pipeline & Orchestration',
-    icon: '🔄',
-    skills: ['Apache Airflow', 'dbt', 'ETL/ELT', 'API Integration'],
-  },
-  {
-    category: 'Databases',
-    icon: '🗄️',
-    skills: ['PostgreSQL', 'MySQL', 'SQL Server', 'NoSQL'],
-  },
-  {
-    category: 'Data Visualization & BI',
-    icon: '📊',
-    skills: ['Power BI', 'Tableau', 'Looker', 'DAX', 'Data Storytelling'],
-  },
-  {
-    category: 'Cloud Platforms',
+    category: 'Cloud — GCP',
     icon: '☁️',
-    skills: ['AWS', 'Google Cloud Platform', 'Microsoft Azure'],
+    skills: ['BigQuery', 'Cloud Functions', 'Cloud Storage', 'Dataflow'],
+  },
+  {
+    category: 'Cloud — Azure',
+    icon: '🔷',
+    skills: ['Azure Databricks', 'Azure Data Factory', 'Azure Synapse'],
+  },
+  {
+    category: 'BI & Visualization',
+    icon: '📊',
+    skills: ['Power BI', 'Tableau', 'Looker Studio', 'DAX'],
   },
   {
     category: 'Automation & RPA',
     icon: '🤖',
-    skills: ['UiPath', 'Power Automate', 'Python Automation'],
+    skills: ['Power Automate', 'UiPath', 'Google AppSheet', 'VBA', 'Ephesoft'],
+  },
+  {
+    category: 'Databases',
+    icon: '🗄️',
+    skills: ['Microsoft SQL Server', 'MySQL', 'PostgreSQL', 'SAP ERP'],
   },
 ]
 
 const proficiencies = [
-  { label: 'Python / SQL', level: 92 },
-  { label: 'Data Pipeline (Airflow, dbt)', level: 88 },
-  { label: 'Big Data (Spark, Kafka)', level: 82 },
-  { label: 'Power BI / Tableau', level: 90 },
-  { label: 'Cloud (AWS / GCP / Azure)', level: 78 },
-  { label: 'RPA (UiPath / Power Automate)', level: 80 },
+  { label: 'SQL / Python', level: 93 },
+  { label: 'Power BI / Tableau / Looker Studio', level: 90 },
+  { label: 'GCP (BigQuery, Cloud Functions, Dataflow)', level: 88 },
+  { label: 'Azure (Databricks, Data Factory, Synapse)', level: 85 },
+  { label: 'Airflow / dbt / Spark', level: 82 },
+  { label: 'RPA (UiPath / Power Automate / AppSheet)', level: 85 },
 ]
 
 export default function Skills() {
@@ -58,7 +53,7 @@ export default function Skills() {
         <div ref={ref} className="section-hidden">
           <SectionTitle label="Technical Skills" />
 
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {skillGroups.map(({ category, icon, skills }) => (
               <div key={category} className="glow-border rounded-xl bg-[#0d0d1a] p-5 card-hover">
                 <div className="flex items-center gap-2 mb-4">
@@ -77,7 +72,6 @@ export default function Skills() {
           </div>
         </div>
 
-        {/* Proficiency bars */}
         <div ref={barRef} className="section-hidden mt-16">
           <h3 className="text-lg font-semibold text-gray-300 mb-8 text-center">Proficiency Overview</h3>
           <div className="max-w-2xl mx-auto space-y-5">

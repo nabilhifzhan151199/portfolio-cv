@@ -3,58 +3,64 @@ import { SectionTitle } from './About'
 
 const projects = [
   {
-    title: 'Real-Time Sales Analytics Pipeline',
+    title: 'GCP Enterprise Data Lake — Pontiac Land Group',
     description:
-      'End-to-end streaming pipeline ingesting POS transaction data with Kafka, processing in near real-time with Spark Streaming, storing in Delta Lake on Databricks, and surfacing KPIs in a live Power BI dashboard.',
-    tags: ['Kafka', 'Spark', 'Databricks', 'Delta Lake', 'Power BI', 'Python'],
-    highlights: ['50M+ events/day', '< 2s latency', '99.9% uptime'],
-    icon: '⚡',
+      'Architected and implemented a scalable enterprise data lake on Google Cloud Platform integrating Cloud Storage, BigQuery, and Cloud Functions to centralize business data across the organization and enable advanced analytics.',
+    tags: ['GCP', 'BigQuery', 'Cloud Functions', 'Cloud Storage', 'ETL'],
+    highlights: ['Enterprise-scale', 'Centralized data', '10 dashboards'],
+    icon: '☁️',
     color: 'indigo',
+    company: 'Pontiac Land Group · 2025',
   },
   {
-    title: 'Customer Churn Prediction & Dashboard',
+    title: 'Supply Chain Manufacturing Data Foundation',
     description:
-      'Machine learning pipeline using Python (scikit-learn) to predict customer churn from CRM data. Automated weekly retraining with Airflow, with results surfaced in a Tableau dashboard for the retention team.',
-    tags: ['Python', 'scikit-learn', 'Airflow', 'PostgreSQL', 'Tableau'],
-    highlights: ['85% recall', 'Weekly auto-retrain', 'Saved 30% churn'],
-    icon: '🧠',
+      'Built the end-to-end data foundation for 6 Unilever factories — 85+ datasets in a data mart sourced from Azure Databricks, with 15 automated Power BI dashboards achieving 80% data coverage and eliminating 120 hours of manual work per month.',
+    tags: ['Azure Databricks', 'Power BI', 'dbt', 'Data Mart', 'SQL'],
+    highlights: ['85+ datasets', '6 factories', '~120 hrs saved/month'],
+    icon: '🏭',
     color: 'cyan',
+    company: 'Unilever · 2022–2025',
   },
   {
-    title: 'Enterprise Data Warehouse Migration',
+    title: 'Board Performance Radar (Director Award 2023)',
     description:
-      'Led full migration from on-premise SQL Server to AWS Redshift. Rebuilt 80+ ETL packages as dbt models with full test coverage. Reduced query time by 60% and cut infrastructure costs by 35%.',
-    tags: ['AWS Redshift', 'dbt', 'SQL Server', 'Python', 'S3'],
-    highlights: ['80+ models', '60% faster queries', '35% cost reduction'],
-    icon: '🏗️',
+      'Led, developed and demonstrated an automated board performance deck covering 30+ cross-department KPIs with a full ETL pipeline. Became the primary data source for board meetings at Unilever SEA&I, winning the Uniops SEA&I Director Award in December 2023.',
+    tags: ['Power BI', 'Azure', 'ETL Pipeline', 'KPI Dashboard', 'SAP'],
+    highlights: ['30+ KPIs', 'Board-level', 'Director Award 2023'],
+    icon: '🏆',
+    color: 'amber',
+    company: 'Unilever · 2023',
+  },
+  {
+    title: 'SAP Data Mart Replication',
+    description:
+      'Developed and maintained 30 SAP-replicated datasets in the data mart by recreating SAP backend logic, enabling fully automated data extraction and fulfilling business reporting requirements without manual SAP access.',
+    tags: ['SAP ERP', 'SQL', 'Azure Databricks', 'Python', 'Data Engineering'],
+    highlights: ['30 datasets', 'Full automation', 'SAP backend logic'],
+    icon: '⚙️',
     color: 'emerald',
+    company: 'Unilever · 2022–2025',
   },
   {
-    title: 'Finance Report Automation (RPA)',
+    title: 'Telecom RPA Solution — Deloitte',
     description:
-      'Automated monthly financial consolidation process using UiPath and Power Automate, pulling data from SAP, transforming in Excel/Python, and distributing formatted reports to 20+ stakeholders.',
-    tags: ['UiPath', 'Power Automate', 'Python', 'VBA', 'SAP'],
-    highlights: ['120 hrs saved/month', 'Zero manual errors', '20+ recipients'],
+      'Developed and implemented end-to-end RPA solutions for Indonesia\'s largest telecommunications company, managing 30+ production robots (peak FTE ~58). Monitored ROI targets and collaborated with stakeholders to identify and design new automation opportunities.',
+    tags: ['UiPath', 'RPA', 'Process Automation', 'Ephesoft', 'Python'],
+    highlights: ['30+ robots', '~58 FTE peak', 'ROI-tracked'],
     icon: '🤖',
     color: 'violet',
+    company: 'Deloitte Consulting · 2021–2022',
   },
   {
-    title: 'Supply Chain BI Dashboard Suite',
+    title: 'AoDocs → AppSheet Migration',
     description:
-      'Designed a suite of 12 Power BI dashboards for supply chain operations, including inventory turnover, supplier performance, and logistics KPIs. Connected live to PostgreSQL and REST APIs.',
-    tags: ['Power BI', 'DAX', 'PostgreSQL', 'REST API', 'SQL'],
-    highlights: ['12 dashboards', '5 departments', 'Daily refresh'],
-    icon: '📊',
-    color: 'amber',
-  },
-  {
-    title: 'GCP Data Lake Architecture',
-    description:
-      'Designed a multi-layer data lake on GCP (Cloud Storage + BigQuery + Dataflow) with Airflow orchestration. Implemented data quality checks with Great Expectations and automated alerting.',
-    tags: ['GCP', 'BigQuery', 'Dataflow', 'Airflow', 'Python', 'dbt'],
-    highlights: ['3-zone architecture', 'Data quality gates', 'Auto-alerts'],
-    icon: '☁️',
+      'Led and implemented the migration of all document management modules from AoDocs to Google AppSheet, including the design of 10 AppSheet applications for data collection and workflow automation, saving SGD 30k per year in licensing costs.',
+    tags: ['AppSheet', 'GCP', 'Google Apps Script', 'Workflow Automation'],
+    highlights: ['SGD 30k saved/year', '10 apps built', 'Non-technical users'],
+    icon: '📱',
     color: 'sky',
+    company: 'Pontiac Land Group · 2025',
   },
 ]
 
@@ -83,9 +89,6 @@ export default function Projects() {
     <section id="projects" className="py-24 px-6 bg-[#0a0a14]">
       <div ref={ref} className="section-hidden max-w-6xl mx-auto">
         <SectionTitle label="Portfolio & Projects" />
-        <p className="mt-3 text-gray-500 text-sm">
-          * Descriptions are representative examples — update with your real projects.
-        </p>
 
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p) => (
@@ -94,10 +97,10 @@ export default function Projects() {
               className={`rounded-2xl bg-[#0d0d1a] border transition-all duration-300 p-6 flex flex-col ${colorMap[p.color]} hover:-translate-y-1`}
             >
               <div className="text-3xl mb-3">{p.icon}</div>
-              <h3 className="text-base font-bold text-white mb-2">{p.title}</h3>
+              <h3 className="text-base font-bold text-white mb-1">{p.title}</h3>
+              <div className="text-xs text-gray-600 mb-3 font-mono">{p.company}</div>
               <p className="text-sm text-gray-400 leading-relaxed flex-1 mb-4">{p.description}</p>
 
-              {/* Highlights */}
               <div className="flex flex-wrap gap-1.5 mb-4">
                 {p.highlights.map(h => (
                   <span key={h} className={`text-xs px-2 py-0.5 rounded border font-medium ${highlightColorMap[p.color]}`}>
@@ -106,7 +109,6 @@ export default function Projects() {
                 ))}
               </div>
 
-              {/* Tags */}
               <div className="flex flex-wrap gap-1.5">
                 {p.tags.map(t => (
                   <span key={t} className="text-xs px-2 py-0.5 rounded-full bg-white/5 text-gray-400 border border-white/10">

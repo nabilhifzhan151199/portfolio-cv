@@ -9,23 +9,27 @@ export default function About() {
         <SectionTitle label="About Me" />
 
         <div className="mt-12 grid md:grid-cols-2 gap-12 items-start">
-          {/* Bio */}
           <div className="space-y-5 text-gray-400 leading-relaxed">
             <p>
-              I&apos;m a passionate <span className="text-indigo-400 font-medium">Data Engineer & Data Analyst</span> with
-              over 5 years of experience designing and optimizing data infrastructure, building end-to-end
-              ETL pipelines, and translating complex datasets into clear, actionable business insights.
+              I&apos;m a <span className="text-indigo-400 font-medium">Data & Analytics professional</span> with
+              5+ years of experience delivering end-to-end data solutions across FMCG, consulting,
+              real estate, and technology-driven organizations in Singapore and Indonesia.
             </p>
             <p>
-              My expertise spans the full data stack — from ingesting raw data with Kafka and Spark, to
-              transforming it with dbt and Airflow, to surfacing it in Power BI or Tableau dashboards that
-              stakeholders actually use. I believe good data engineering is invisible: pipelines just work,
-              data is always fresh, and analysts can trust their numbers.
+              My core strength lies in bridging the gap between raw data and business value — designing
+              scalable ETL pipelines, building cloud data platforms on <span className="text-indigo-400 font-medium">GCP and Azure</span>,
+              and producing dashboards that leadership teams rely on for strategic decisions.
             </p>
             <p>
-              I thrive in cross-functional environments, working closely with business teams to
-              understand their questions and engineers to ensure scalability. I&apos;m also experienced
-              in RPA automation using UiPath and Power Automate to eliminate repetitive manual processes.
+              At <span className="text-indigo-400 font-medium">Unilever</span>, I built the Supply Chain Manufacturing Data Foundation
+              for 6 factories — 85+ datasets, 15 automated dashboards — eliminating 120 hours of manual
+              work per month. At <span className="text-indigo-400 font-medium">Pontiac Land Group</span>, I architected a GCP enterprise
+              data lake and saved SGD 30k/year through platform migration. At <span className="text-indigo-400 font-medium">Deloitte</span>,
+              I delivered RPA solutions for Indonesia&apos;s largest telecom company.
+            </p>
+            <p>
+              I hold a Bachelor&apos;s degree in Chemical Engineering from the University of Indonesia
+              (GPA 3.65) and am Microsoft Azure Fundamentals certified (AZ-900).
             </p>
             <div className="pt-2">
               <a
@@ -37,13 +41,15 @@ export default function About() {
             </div>
           </div>
 
-          {/* Info card */}
           <div className="glow-border rounded-2xl bg-[#0d0d1a] p-6 space-y-4">
             {[
-              { icon: '📍', label: 'Location', value: 'Indonesia' },
-              { icon: '💼', label: 'Role', value: 'Data Engineer & Data Analyst' },
+              { icon: '📍', label: 'Location', value: 'Singapore' },
+              { icon: '💼', label: 'Current Role', value: 'Data & System Analyst/Engineer · Pontiac Land Group' },
               { icon: '✉️', label: 'Email', value: 'nabil.hifzhan@gmail.com' },
-              { icon: '🔗', label: 'LinkedIn', value: 'linkedin.com/in/nabil-hifzhan', href: 'https://www.linkedin.com/in/nabil-hifzhan/' },
+              { icon: '📱', label: 'Phone', value: '+65 8650 8946' },
+              { icon: '🔗', label: 'LinkedIn', value: 'linkedin.com/in/nabil-hifzhan', href: 'https://www.linkedin.com/in/nabil-hifzhan' },
+              { icon: '🎓', label: 'Education', value: 'B.Eng Chemical Engineering — Universitas Indonesia, GPA 3.65' },
+              { icon: '🏆', label: 'Certification', value: 'Microsoft Azure Fundamentals (AZ-900)' },
               { icon: '🟢', label: 'Status', value: 'Open to opportunities' },
             ].map(({ icon, label, value, href }) => (
               <div key={label} className="flex items-start gap-3">
