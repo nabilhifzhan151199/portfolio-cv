@@ -49,8 +49,6 @@ export default function About() {
               { icon: '📱', label: 'Phone', value: '+65 8650 8946' },
               { icon: '🔗', label: 'LinkedIn', value: 'linkedin.com/in/nabil-hifzhan', href: 'https://www.linkedin.com/in/nabil-hifzhan' },
               { icon: '🎓', label: 'Education', value: 'B.Eng Chemical Engineering — Universitas Indonesia, GPA 3.65' },
-              { icon: '🏆', label: 'Certification', value: 'Microsoft Azure Fundamentals (AZ-900)' },
-              { icon: '🟢', label: 'Status', value: 'Open to opportunities' },
             ].map(({ icon, label, value, href }) => (
               <div key={label} className="flex items-start gap-3">
                 <span className="text-lg w-7 shrink-0">{icon}</span>

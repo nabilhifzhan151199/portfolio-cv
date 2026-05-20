@@ -50,7 +50,7 @@ export default function Hero() {
         <div className="mx-auto mb-8 relative w-36 h-36 sm:w-44 sm:h-44">
           <div className="w-full h-full rounded-full border-2 border-indigo-500/50 overflow-hidden bg-surface-2 flex items-center justify-center shadow-[0_0_30px_rgba(99,102,241,0.25)]">
             <img
-              src="/profile.jpg"
+              src="/portfolio-cv/Formal Photo.JPG"
               alt="Muhammad Nabil Hifzhan"
               className="w-full h-full object-cover"
               onError={e => {
