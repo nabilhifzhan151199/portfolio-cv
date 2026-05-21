@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react'
 
 const links = [
   { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Skills' },
   { href: '#experience', label: 'Experience' },
+  { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
   { href: '#certifications', label: 'Certifications' },
   { href: '#education', label: 'Education' },
@@ -37,7 +37,7 @@ export default function Navbar() {
     }`}>
       <div className="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
         <a href="#home" className="font-mono text-indigo-400 font-semibold tracking-wider text-sm">
-          {'<MNH />'}
+          {'Muhammad Nabil Hifzhan'}
         </a>
 
         {/* Desktop links */}

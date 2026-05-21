@@ -11,25 +11,26 @@ export default function About() {
         <div className="mt-12 grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-5 text-gray-400 leading-relaxed">
             <p>
-              I&apos;m a <span className="text-indigo-400 font-medium">Data & Analytics professional</span> with
+              I&apos;m a <span className="text-indigo-400 font-medium">Data Analytics/Engineer professional</span> with
               5+ years of experience delivering end-to-end data solutions across FMCG, consulting,
-              real estate, and technology-driven organizations in Singapore and Indonesia.
+              real estate, and technology-driven organizations.
             </p>
             <p>
-              My core strength lies in bridging the gap between raw data and business value — designing
-              scalable ETL pipelines, building cloud data platforms on <span className="text-indigo-400 font-medium">GCP and Azure</span>,
-              and producing dashboards that leadership teams rely on for strategic decisions.
+              I architect data solutions from raw ingestion through <span className="text-indigo-400 font-medium">transformation and 
+              modelling</span>, ensuring everything is clean, consistent, and query-ready at scale using Python and SQL. 
+              On the infrastructure side, I design and deploy <span className="text-indigo-400 font-medium">cloud 
+              pipelines</span> across Azure, GCP, and AWS to handle high-volume batch and event-driven workloads. I then build 
+              <span className="text-indigo-400 font-medium">BI dashboards</span> and self-serve reporting layers using Power BI 
+              and Tableau to translate complex datasets into clear, actionable insights for both operational and executive teams. 
+              I also <span className="text-indigo-400 font-medium">integrate data</span> across third-party systems, APIs, and 
+              enterprise platforms to ensure a unified and reliable single source of truth.
             </p>
             <p>
-              At <span className="text-indigo-400 font-medium">Unilever</span>, I built the Supply Chain Manufacturing Data Foundation
-              for 6 factories — 85+ datasets, 15 automated dashboards — eliminating 120 hours of manual
-              work per month. At <span className="text-indigo-400 font-medium">Pontiac Land Group</span>, I architected a GCP enterprise
-              data lake and saved SGD 30k/year through platform migration. At <span className="text-indigo-400 font-medium">Deloitte</span>,
-              I delivered RPA solutions for Indonesia&apos;s largest telecom company.
-            </p>
-            <p>
-              I hold a Bachelor&apos;s degree in Chemical Engineering from the University of Indonesia
-              (GPA 3.65) and am Microsoft Azure Fundamentals certified (AZ-900).
+              At <span className="text-indigo-400 font-medium">Pontiac Land Group</span>, I architected a GCP enterprise data 
+              lake and saved SGD 30k/year through platform migration. At <span className="text-indigo-400 font-medium">Unilever
+              </span>, I built the Supply Chain Manufacturing Data Foundation for 6 factories — 85+ datasets, 15 automated 
+              dashboards — eliminating 120 hours of manual work per month. At <span className="text-indigo-400 font-medium">
+              Deloitte</span>, I delivered RPA solutions for Indonesia&apos;s largest telecom company.
             </p>
             <div className="pt-2">
               <a

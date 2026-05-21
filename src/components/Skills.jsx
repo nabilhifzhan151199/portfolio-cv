@@ -5,22 +5,22 @@ const skillGroups = [
   {
     category: 'Data Engineering & Analytics',
     icon: '⚙️',
-    skills: ['SQL', 'Python', 'Apache Airflow', 'dbt', 'Apache Spark', 'Hadoop', 'Hive', 'API Integration', 'Google Apps Script'],
+    skills: ['SQL', 'Python', 'Airflow', 'dbt', 'Spark', 'Hadoop', 'Hive', 'API', 'Google Apps Script', 'Snowflake', 'Databricks'],
   },
   {
-    category: 'Cloud — GCP',
+    category: 'Cloud',
     icon: '☁️',
-    skills: ['BigQuery', 'Cloud Functions', 'Cloud Storage', 'Dataflow'],
+    skills: ['Azure', 'GCP', 'AWS'],
   },
   {
-    category: 'Cloud — Azure',
+    category: 'Artifical Intelligence',
     icon: '🔷',
-    skills: ['Azure Databricks', 'Azure Data Factory', 'Azure Synapse'],
+    skills: ['Claude', 'Gemini', 'ChatGPT'],
   },
   {
     category: 'BI & Visualization',
     icon: '📊',
-    skills: ['Power BI', 'Tableau', 'Looker Studio', 'DAX'],
+    skills: ['Power BI', 'Tableau', 'Looker', 'DAX'],
   },
   {
     category: 'Automation & RPA',

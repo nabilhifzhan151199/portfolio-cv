@@ -15,7 +15,7 @@ const experiences = [
       'Designed and implemented 10 AppSheet applications to automate data collection and workflow management for non-technical users.',
       'Led a company-wide data cleanup initiative, designing a robust database architecture to support scalable and reliable data management.',
     ],
-    tags: ['GCP', 'BigQuery', 'Cloud Functions', 'Cloud Storage', 'AppSheet', 'ETL', 'Dashboarding'],
+    tags: ['System Integration & Migration', 'Data Analytics & Engineering', 'Database Design', 'Cloud Architecture', 'Data Visualization', 'Chatbot', 'Automation' ],
   },
   {
     title: 'Data Analytics/Engineer — Finance & Supply Chain',
@@ -31,7 +31,7 @@ const experiences = [
       'Developed and demonstrated an automated board performance deck covering 30+ cross-department KPIs — the primary data source for board meetings (Uniops SEA&I Director Award 2023).',
       'Developed and managed 5 automation workflows using Power Automate and UiPath, reducing manual processes and integrating with external platforms.',
     ],
-    tags: ['Azure Databricks', 'Power BI', 'Azure Data Factory', 'SAP', 'Power Automate', 'UiPath', 'dbt'],
+    tags: ['Data Analytics & Engineering', 'Data Mart', 'Data Modeling', 'Data Visualization', 'System Integration', 'SAP Replication', 'Automation'],
   },
   {
     title: 'Artificial Intelligence & Data Analyst',
@@ -45,7 +45,7 @@ const experiences = [
       'Collaborated with clients and business stakeholders to identify automation opportunities, gather requirements, and design workflows.',
       'Monitored performance and utilization of each robot against ROI targets, decommissioning underperforming automations.',
     ],
-    tags: ['UiPath', 'RPA', 'Process Automation', 'Python', 'Ephesoft'],
+    tags: ['RPA', 'ORC','Data Migration', 'Data Visualization', 'Troubleshooting'],
   },
   {
     title: 'City Growth Intern',
@@ -58,7 +58,7 @@ const experiences = [
       'Planned, monitored, and optimized in-app customer assets, improving click-through rate by 10% through data-driven adjustments.',
       'Collaborated with marketing and sales teams to execute city-level campaigns.',
     ],
-    tags: ['Data Analysis', 'Performance Analytics', 'SQL', 'Campaign Analytics'],
+    tags: ['Data Analysis', 'Performance Analytics', 'Campaign Analytics'],
   },
 ]
 

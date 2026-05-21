@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 
-const roles = ['Data & System Engineer', 'Data Analytics Engineer', 'BI Dashboard Developer', 'RPA & Automation Specialist']
+const roles = ['Data Analytics & Engineer', 'Business Intelligence Developer', 'RPA & Automation Specialist']
 
 export default function Hero() {
   const roleRef = useRef(null)
@@ -77,8 +77,8 @@ export default function Hero() {
         </div>
 
         <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-          Data & Analytics professional delivering end-to-end data solutions across
-          FMCG, consulting, real estate, and technology-driven organizations in
+          Data & Analytics professional specializing in data engineering, cloud infrastructure, system integration,
+          analytics, and automation — building scalable, end-to-end data solutions across
           Singapore & Indonesia.
         </p>
 

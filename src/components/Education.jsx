@@ -8,7 +8,7 @@ const education = [
     period: 'Aug 2017 – Aug 2021',
     gpa: '3.65 / 4.00',
     description:
-      'Graduated with strong analytical and quantitative foundations. Active in engineering student organisations. Awarded 2nd Runner Up Most Outstanding Student, Faculty of Engineering (June 2020).',
+      'Graduated with strong analytical and quantitative foundations. Active in engineering student organisations. Awarded 2nd Runner Up Most Outstanding Student on Faculty of Engineering.',
     icon: '🎓',
     flag: '🇮🇩',
   },
@@ -18,7 +18,7 @@ const education = [
     period: 'Jan 2021 – Feb 2021',
     gpa: null,
     description:
-      'Selected for Kyoto University\'s competitive Winter School programme in Energy Science, gaining international academic exposure in Japan.',
+      'Selected for Kyoto University\'s  Winter School programme in Energy Science from ASEAN University Network(AUN), gaining international academic exposure.',
     icon: '🏛️',
     flag: '🇯🇵',
   },
