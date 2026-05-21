@@ -16,14 +16,12 @@ export default function About() {
               real estate, and technology-driven organizations.
             </p>
             <p>
-              I architect data solutions from raw ingestion through <span className="text-indigo-400 font-medium">transformation and 
-              modelling</span>, ensuring everything is clean, consistent, and query-ready at scale using Python and SQL. 
-              On the infrastructure side, I design and deploy <span className="text-indigo-400 font-medium">cloud 
-              pipelines</span> across Azure, GCP, and AWS to handle high-volume batch and event-driven workloads. I then build 
-              <span className="text-indigo-400 font-medium">BI dashboards</span> and self-serve reporting layers using Power BI 
-              and Tableau to translate complex datasets into clear, actionable insights for both operational and executive teams. 
-              I also <span className="text-indigo-400 font-medium">integrate data</span> across third-party systems, APIs, and 
-              enterprise platforms to ensure a unified and reliable single source of truth.
+              I architect data solutions from raw ingestion through <span className="text-indigo-400 font-medium">transformation 
+              and modelling</span>, ensuring everything is clean using Python and SQL. I design and 
+              deploy <span className="text-indigo-400 font-medium">cloud pipelines</span> across Azure, GCP, and AWS for batch 
+              and event-driven workloads. then surface insights through <span className="text-indigo-400 font-medium">BI 
+              dashboards</span> in Power BI and Tableau. I also <span className="text-indigo-400 font-medium">integrate 
+              data</span> across APIs and enterprise platforms to ensure a reliable source of truth.
             </p>
             <p>
               At <span className="text-indigo-400 font-medium">Pontiac Land Group</span>, I architected a GCP enterprise data 
