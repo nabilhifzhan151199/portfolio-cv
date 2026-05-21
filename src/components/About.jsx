@@ -4,7 +4,7 @@ export default function About() {
   const ref = useScrollReveal()
 
   return (
-    <section id="about" className="py-24 px-6">
+    <section id="about" className="pt-24 pb-12 px-6">
       <div ref={ref} className="section-hidden max-w-6xl mx-auto">
         <SectionTitle label="About Me" />
 

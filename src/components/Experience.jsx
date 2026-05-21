@@ -66,7 +66,7 @@ export default function Experience() {
   const ref = useScrollReveal()
 
   return (
-    <section id="experience" className="py-24 px-6">
+    <section id="experience" className="pt-12 pb-24 px-6">
       <div ref={ref} className="section-hidden max-w-6xl mx-auto">
         <SectionTitle label="Work Experience" />
 
